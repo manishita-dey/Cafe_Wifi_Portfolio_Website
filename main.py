@@ -28,7 +28,7 @@ class Cafe(db.Model):
     has_sockets = db.Column(db.Integer, nullable=False)
     can_take_calls = db.Column(db.Integer, nullable=False)
     coffee_price = db.Column(db.String(250), nullable=True)
-db.create_all()
+# db.create_all()
 
 
 
