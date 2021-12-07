@@ -30,44 +30,6 @@ class Cafe(db.Model):
     coffee_price = db.Column(db.String(250), nullable=True)
 # db.create_all()
 
-cafe1 = Cafe(name = 'Science Gallery London',
-                        map_url = 'https://g.page/scigallerylon?share',
-                        img_url = 'https://atlondonbridge.com/wp-content/uploads/2019/02/Pano_9758_9761-Edit-190918_LTS_Science_Gallery-Medium-Crop-V2.jpg',
-                        location = 'London Bridge',
-                        seats = '50+',
-                        has_toilet = '1',
-                        has_wifi = '0',
-                        has_sockets = '1',
-                        can_take_calls = '1',
-                        coffee_price = '£2.40')
-
-
-cafe2 = Cafe(name='Social - Copeland Road',
-                map_url='https://g.page/CopelandSocial?share',
-                img_url='https://images.squarespace-cdn.com/content/v1/5734f3ff4d088e2c5b08fe13/1555848382269-9F13FE1WQDNUUDQOAOXF/ke17ZwdGBToddI8pDm48kAeyi0pcxjZfLZiASAF9yCBZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzV8NE8s7067ZLWyi1jRvJklJnlBFEUyq1al9AqaQ7pI4DcRJq_Lf3JCtFMXgpPQyk/copeland-park-bar-peckham',
-                location='Peckham',
-                seats='20-30',
-                has_toilet='1',
-                has_wifi='1',
-                has_sockets='1',
-                can_take_calls='0',
-                coffee_price='£2.75')
-
-cafe3 = Cafe(name='One & All Cafe Peckham',
-                map_url='https://g.page/one-all-cafe?share',
-                img_url='https://lh3.googleusercontent.com/p/AF1QipOMzXpKAQNyUvrjTGHqCgWk8spwnzwP8Ml2aDKt=s0',
-                location='Peckham',
-                seats='20-30',
-                has_toilet='1',
-                has_wifi='1',
-                has_sockets='1',
-                can_take_calls='0',
-                coffee_price='£2.75')
-
-db.session.add(cafe1)
-db.session.add(cafe2)
-db.session.add(cafe2)
-db.session.commit()
 
 @app.route('/')
 def home_page():
